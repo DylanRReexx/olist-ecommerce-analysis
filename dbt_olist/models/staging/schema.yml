@@ -16,7 +16,8 @@ models:
         tests:
           - not_null
           - accepted_values:
-              values: ['delivered', 'shipped', 'canceled', 'unavailable', 'invoiced', 'processing', 'created', 'approved']
+              arguments:
+                values: ['delivered', 'shipped', 'canceled', 'unavailable', 'invoiced', 'processing', 'created', 'approved']
 
   - name: stg_customers
     columns:
