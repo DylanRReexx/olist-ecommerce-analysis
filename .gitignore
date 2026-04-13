@@ -30,6 +30,11 @@ MANIFEST
 data/duckdb/
 logs/
 
+# dbt
+dbt_olist/logs/
+dbt_olist/target/
+dbt_olist/dbt_packages/
+
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
