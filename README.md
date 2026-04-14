@@ -91,24 +91,24 @@ Raw CSVs → Ingestion + Quality Checks → DuckDB → dbt Staging → dbt Marts
 
 ## 📁 Project Structure
 
-olist-ecommerce-analysis/
-├── data/
-│   ├── raw/                  # Original CSV files
-│   └── duckdb/               # DuckDB database (not tracked in git)
-├── ingestion/
-│   └── load_data.py          # Load CSVs + data quality checks
-├── dbt_olist/
-│   ├── models/
-│   │   ├── staging/          # Cleaned and renamed raw tables
-│   │   └── marts/            # Business-ready models
-│   └── dbt_project.yml
-├── analyses/
-│   └── explore.py            # Initial data exploration
-├── utils/
-│   ├── logger.py             # Centralized logging
-│   └── quality.py            # Reusable quality checks
-├── pipeline.py               # Orchestrated pipeline entry point
-└── requirements.txt
+    olist-ecommerce-analysis/
+    ├── data/
+    │   ├── raw/                  # Original CSV files
+    │   └── duckdb/               # DuckDB database (not tracked in git)
+    ├── ingestion/
+    │   └── load_data.py          # Load CSVs + data quality checks
+    ├── dbt_olist/
+    │   ├── models/
+    │   │   ├── staging/          # Cleaned and renamed raw tables
+    │   │   └── marts/            # Business-ready models
+    │   └── dbt_project.yml
+    ├── analyses/
+    │   └── explore.py            # Initial data exploration
+    ├── utils/
+    │   ├── logger.py             # Centralized logging
+    │   └── quality.py           # Reusable quality checks
+    ├── pipeline.py               # Orchestrated pipeline entry point
+    └── requirements.txt
 
 ---
 
